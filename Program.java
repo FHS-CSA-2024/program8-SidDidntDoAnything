@@ -9,6 +9,9 @@ class HelloWorld {
         Scanner sc = new Scanner(System.in);
         double n1;
         double n2;
+        double absval;
+        double max;
+        double min;
         System.out.print("\nEnter first number: ");
         n1 = sc.nextDouble();
         System.out.print("\nEnter second number: ");
@@ -18,18 +21,44 @@ class HelloWorld {
         double product = n1 * n2;
         double avg = (n1 + n2)/2;
         if (n1 > n2) {
-            double absval = n1 - n2;
+             absval = n1 - n2;
         }
         else {
-            double absval = n2 - n1;
+             absval = n2 - n1;
         }
-        
-        
+        if (n1 > n2) {
+             max = n1;
+             min = n2;
+        }
+        else {
+             max = n2;
+             min = n1;
+        }
+        System.out.println("Original numbers are " + n1 + " and " + n2);
+        System.out.println("Sum = " + sum);
+        System.out.println("Difference = " + difference);
+        System.out.println("Product = " + product);
+        System.out.println("Average = " + avg);
+        System.out.println("Absolute value = " + absval);
+        System.out.println("Maximum = " + max);
+        System.out.print("Minimum = " + min);
+
+
 
         }
 }
 //Paste console output below:
 /*
+Enter first number: 13
 
+Enter second number: 20
+Original numbers are 13.0 and 20.0
+Sum = 33.0
+Difference = -7.0
+Product = 260.0
+Average = 16.5
+Absolute value = 7.0
+Maximum = 20.0
+Minimum = 13.0
 
 */
