@@ -6,7 +6,7 @@
 import java.util.Scanner;
 
 //Class name does not match the file name
-class HelloWorld {
+class Program {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double n1;
